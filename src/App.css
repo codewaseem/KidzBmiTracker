@@ -108,6 +108,19 @@ body {
   text-align: center;
 }
 
+.app-Main-SideNav-Search {
+  width: 100%;
+  margin-top : 10px;  
+}
+
+.app-Main-SideNav-Search input {
+  width: 90%;
+  background: #0b0c10;
+  border : 0px;
+  padding : 10px 5px;
+  color : #66fcf1;
+}
+
 .app-Main-SideNav.open {
   transform: translateX(0px);
 }
