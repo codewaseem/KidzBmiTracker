@@ -3,10 +3,22 @@ import { KidsList } from "../KidsList/KidList";
 import { Search } from "../Search/Search";
 export class SideNav extends Component {
 
-  kids = [{ name: 'Madiha' }, { name: 'Noorain' }];
+
+  kids = this.props.kids
 
   state = {
-    filteredKids: this.kids
+    filteredKids: this.kids,
+  }
+
+  selectKid = (id) => {
+    let newSelectedKid = this.props.selectedKid;
+    for (let kid of this.kids) {
+      if (kid.id === id) {
+        newSelectedKid = kid;
+        break;
+      }
+    }
+    this.props.onKidSelect(newSelectedKid);
   }
 
   handleSearch = (search) => {
@@ -31,7 +43,7 @@ export class SideNav extends Component {
     return (
       <div className="app-Main-SideNav">
         <Search onSearch={this.handleSearch} />
-        <KidsList kids={this.state.filteredKids.map(kid => kid.name)} />
+        <KidsList kids={this.state.filteredKids} selectedKid={this.props.selectedKid} onKidSelect={this.selectKid} />
       </div>
     )
   }
