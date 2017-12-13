@@ -1,0 +1,34 @@
+.nav-buttons-container {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;  
+  flex-wrap: wrap;
+}
+
+.buttons-row-direction {
+  flex-direction: row;
+}
+
+.nav-buttons-container>*{
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  margin: 1px;
+  border: 0px;
+  min-width: 60px;
+  flex: 1;
+  background: #0b0c10;
+  color: #66fcf1;
+  cursor: pointer;
+}
+
+.nav-buttons-container>*:hover{
+  background: #1f2833;
+  transform: translateY(1px);
+}
+.nav-buttons-container>*.selected{
+  background: #66fcf1;
+  color: #0b0c10;
+  transform: translateY(1px);
+}

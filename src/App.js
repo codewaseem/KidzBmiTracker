@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from "./components/Header/Header";
 import { SideNav } from './components/SideNav/SideNav';
+import { ChartsView } from './components/ChartsView/ChartsView';
 import "./App.css";
 
 class App extends Component {
@@ -49,10 +50,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header toggleSideNav={this.toggleSideNav} isSideNavShown={this.state.isSideNavShown  }/>
         <main className="app-Main">
-          <span className="app-hamburger" onClick={this.toggleSideNav}>{this.state.isSideNavShown ? <span>✖</span> : <span>☰</span>}</span>
           <SideNav kids={this.kids} selectedKid={this.state.selectedKid} onKidSelect={this.selectKid} />
+          <ChartsView />
         </main>
         <footer className="app-Footer"><small>KidzBmi &copy; 2017</small></footer>
       </div>
