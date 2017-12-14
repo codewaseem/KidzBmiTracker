@@ -25,7 +25,6 @@
 
 .nav-buttons-container>*:hover{
   background: #1f2833;
-  transform: translateY(1px);
 }
 .nav-buttons-container>*.selected{
   background: #66fcf1;
