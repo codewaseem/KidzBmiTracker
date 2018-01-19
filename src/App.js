@@ -50,7 +50,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header toggleSideNav={this.toggleSideNav} isSideNavShown={this.state.isSideNavShown  }/>
+        <Header toggleSideNav={this.toggleSideNav} isSideNavShown={this.state.isSideNavShown} />
         <main className="app-Main">
           <SideNav kids={this.kids} selectedKid={this.state.selectedKid} onKidSelect={this.selectKid} />
           <ChartsView />

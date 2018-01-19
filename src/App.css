@@ -1,6 +1,6 @@
 /* 
-  background : #0b0c10
-  background-light : #1f2833
+  background : #FDFFFC
+  background-light : #28402F
   gray : c5c6c7;
   font  66Fcf1;
   font-dark #45a29e
@@ -12,13 +12,13 @@
 }
 
 body {
-  background: #0b0c10;
+  background: #FDFFFC;
   color : #66fcf1;
   font-size: 16px;
 }
 
 .app-Header {
-  background: #1f2833;
+  background: #28402F;
   padding: 10px 10px 20px;
   display: flex;
   height: 75px;
@@ -48,7 +48,7 @@ body {
 
 .app-hamburger{
   position: absolute;
-  background: #0b0c10;
+  background: #FDFFFC;
   padding: 5px;
   height: 25px;
   width:25px;
@@ -68,7 +68,7 @@ body {
 }
 
 .app-Footer {
-  background: #1f2833;  
+  background: #28402F;  
   height: 25px;
   text-align: center;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .app-Main-SideNav{
-  background: #1f2833;
+  background: #28402F;
   transition: transform 0.5s;
   transform: translateX(-300px);
   width: 250px;
@@ -99,7 +99,7 @@ body {
 
 .app-Main-SideNav-Search input {
   width: 90%;
-  background: #0b0c10;
+  background: #FDFFFC;
   border : 0px;
   padding : 10px 5px;
   color : #66fcf1;
@@ -128,7 +128,7 @@ body {
   margin: 1px;
   width: 100px;
   border: 0px;
-  background: #0b0c10;
+  background: #FDFFFC;
   color : #66fcf1;
   cursor: pointer;
 }
@@ -143,7 +143,7 @@ body {
 
 .app-LoginSignUp-SignUp{
   background: #66fcf1;
-  color : #0b0c10;
+  color : #FDFFFC;
 }
 
 @media screen and (min-width:480px){
